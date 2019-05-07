@@ -1,0 +1,422 @@
+@charset "UTF-8";
+@font-face {
+  font-family: NovaBold;
+  font-weight: 700;
+  font-style: normal;
+  src: url("C:/Users/Яна/Desktop/carpacoff/carpachoff.github.io/fonts/ProximaNova-Bold.ttf");
+}
+
+@font-face {
+  font-family: Extrabld;
+  font-weight: 900;
+  font-style: normal;
+  src: url("C:/Users/Яна/Desktop/carpacoff/carpachoff.github.io/fonts/ProximaNova-Extrabld.ttf");
+}
+
+@font-face {
+  font-family: Regular;
+  font-weight: 400;
+  font-style: normal;
+  src: url("C:/Users/Яна/Desktop/carpacoff/carpachoff.github.io/fonts/ProximaNova-Regular.ttf");
+}
+
+@font-face {
+  font-family: Semibold;
+  font-weight: 500;
+  font-style: normal;
+  src: url("C:/Users/Яна/Desktop/carpacoff/carpachoff.github.io/fonts/ProximaNova-Semibold.ttf");
+}
+
+.container {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header .header_menu {
+  background-color: #FFFFFF;
+}
+
+header .header_menu .header_topline_white {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 70px;
+}
+
+header .header_menu .header_topline_white .logo a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 18px 0 18px 0;
+}
+
+header .header_menu .header_topline_white nav {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+header .header_menu .header_topline_white nav a {
+  font-family: NovaBold;
+  text-decoration: none;
+  color: #222B3A;
+  font-size: 16px;
+  border-bottom: 2px solid transparent;
+}
+
+header .header_menu .header_topline_white nav a:hover {
+  border-bottom: 2px solid #FC890D;
+}
+
+.header_content {
+  position: relative;
+  height: 80vh;
+  background: url("../images/Группа 4.png");
+  background-size: cover;
+}
+
+.header_content .main_header_block {
+  padding-top: 80px;
+}
+
+.header_content .main_header_block .black_square {
+  background: #222B3A;
+  width: 50%;
+  padding: 19px 0;
+}
+
+.header_content .main_header_block .black_square h1 {
+  font-family: NovaBold;
+  color: #FFFFFF;
+  font-size: 44px;
+  line-height: 44px;
+  margin: 0;
+  text-align: right;
+  padding-right: 15%;
+}
+
+.header_content .main_header_block .header_title {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_content .main_header_block .header_title .header_text {
+  width: 50%;
+}
+
+.header_content .main_header_block .header_title .header_text p {
+  font-size: 16px;
+  line-height: 27px;
+  font-family: Semibold;
+  color: #222B3A;
+  margin-bottom: 41px;
+}
+
+.header_content .main_header_block .header_title .header_text .progress_bar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 468px;
+  height: 15px;
+  background: #F3F3F3;
+  border: 1px solid #F3F3F3;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+}
+
+.header_content .main_header_block .header_title .header_text .progress_bar .progress {
+  width: 259px;
+  height: 9px;
+  background: #296DCE;
+  border-radius: 2px;
+}
+
+.header_content .main_header_block .header_title .header_text .processing_number {
+  font-family: Semibold;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 340px;
+  color: #FFFFFF;
+  margin-top: 7px;
+}
+
+.header_content .main_header_block .header_title .header_text .processing_number .total {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_content .main_header_block .header_title .header_text .processing_number .total .number {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.header_content .main_header_block .header_title .header_text .processing_number .done {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header_content .main_header_block .header_title .header_text .processing_number .done .number {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.block_main_theme {
+  background: #FAFAFA;
+}
+
+.main_theme {
+  list-style: none;
+  padding: 20px 0 20px 0;
+  margin: 0;
+}
+
+.main_theme li {
+  display: inline-block;
+}
+
+.main_theme li a {
+  color: #979FAD;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: Semibold;
+  position: relative;
+  padding: 0 35px 0 0;
+  margin: 0 10px 0 0;
+}
+
+.main_theme li a::after {
+  content: '';
+  position: absolute;
+  top: 9px;
+  right: 0;
+  width: 22px;
+  height: 1px;
+  background: #979FAD;
+}
+
+.main_theme .bold_link {
+  font-size: 16px;
+  line-height: 19px;
+  font-family: Semibold;
+  text-decoration: none;
+  color: #222B3A;
+}
+
+.module_tasks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  color: #222B3A;
+}
+
+.module_tasks h2 {
+  font-size: 18px;
+  line-height: 22px;
+  color: #222B3A;
+  font-family: NovaBold;
+  position: relative;
+  padding-left: 30px;
+  overflow: hidden;
+  width: 100%;
+}
+
+.module_tasks h2::before, .module_tasks h2::after {
+  content: '';
+  position: absolute;
+  display: inline-block;
+  border-width: 0 10px;
+  vertical-align: middle;
+  height: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-width: 0 100%;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.module_tasks h2::before {
+  width: 22px;
+  left: 0;
+  border: 1px solid #222B3A;
+}
+
+.module_tasks h2::after {
+  width: 100%;
+  margin-left: 10px;
+  border: 1px solid #F1F1F1;
+}
+
+.module_tasks_items {
+  padding-bottom: 65px;
+}
+
+.block_content ol {
+  counter-reset: myCounter;
+  padding: 0;
+}
+
+.block_content ol li {
+  border-bottom: 1.3px solid #F3F3F3;
+  list-style: none;
+  position: relative;
+}
+
+.block_content ol li::before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 24px;
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  font-family: NovaBold;
+  color: #222B3A;
+  background: #F3F3F3;
+  display: inline-block;
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 3px;
+}
+
+.block_content ol li .tasks_paragraf {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 16px;
+  line-height: 19px;
+  font-family: NovaBold;
+  color: #222B3A;
+  position: relative;
+  cursor: pointer;
+}
+
+.block_content ol li .tasks_paragraf input[type="checkbox"]:checked,
+.block_content ol li .tasks_paragraf input[type="checkbox"]:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+
+.block_content ol li .tasks_paragraf label {
+  padding: 23px 55px 27px 80px;
+  cursor: pointer;
+}
+
+.block_content ol li .tasks_paragraf label::before {
+  content: "";
+  position: absolute;
+  margin: auto;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  display: block;
+  width: 25px;
+  height: 25px;
+  background: #0099DD;
+  border-radius: 3px;
+}
+
+.block_content ol li .tasks_paragraf label::after {
+  content: "";
+  position: absolute;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  right: 5px;
+  top: -3px;
+  bottom: 0;
+  margin: auto;
+  width: 10px;
+  height: 5px;
+  border-radius: 1px;
+  border-left: 4px solid #FFFFFF;
+  border-bottom: 4px solid #FFFFFF;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.block_content ol li .tasks_paragraf input[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+}
+
+.block_content ol li .tasks_paragraf input[type="checkbox"]:not(:checked) + label:before {
+  background: #FAFAFA;
+  border: 1px solid #DADADA;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.block_content ol li .tasks_paragraf input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+}
+
+.block_content ol li .tasks_paragraf:last-child {
+  border-bottom: 1.3px solid transparent;
+}
+/*# sourceMappingURL=modul.css.map */

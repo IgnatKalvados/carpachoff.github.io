@@ -1,0 +1,348 @@
+@import './variables.scss';
+@font-face {
+    font-family: NovaBold;
+    font-weight: 700;
+    font-style: normal;
+    src: url("C:/Users/Яна/Desktop/carpacoff/carpachoff.github.io/fonts/ProximaNova-Bold.ttf");
+}
+@font-face {
+    font-family: Extrabld;
+    font-weight: 900;
+    font-style: normal;
+    src: url("C:/Users/Яна/Desktop/carpacoff/carpachoff.github.io/fonts/ProximaNova-Extrabld.ttf");
+}
+@font-face {
+    font-family: Regular;
+    font-weight: 400;
+    font-style: normal;
+    src: url("C:/Users/Яна/Desktop/carpacoff/carpachoff.github.io/fonts/ProximaNova-Regular.ttf");
+}
+@font-face {
+    font-family: Semibold;
+    font-weight: 500;
+    font-style: normal;
+    src: url("C:/Users/Яна/Desktop/carpacoff/carpachoff.github.io/fonts/ProximaNova-Semibold.ttf");
+}
+.container {
+    max-width: 950px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+header {
+    .header_menu {
+        background-color: $white;
+
+            .header_topline_white {
+                display: flex;
+                justify-content: space-between;
+                align-items: center; 
+                line-height: 70px;
+                .logo { 
+                    a {
+                display: flex;
+                align-items: center;
+                padding: 18px 0 18px 0;
+                    }
+            }
+                nav{
+                    width: 50%;
+                    display: flex;
+                    justify-content: space-between;
+                    a{
+                        font-family:NovaBold;
+                        text-decoration: none;
+                        color: $black;
+                        font-size: 16px;                           
+                        border-bottom: 2px solid transparent;
+                        &:hover{
+                            border-bottom: 2px solid $orange;
+                        }
+    
+                    }
+                   
+                }
+            }
+
+        }
+}
+.header_content {
+    position: relative;
+    height: 80vh;
+    background: url('../images/Группа 4.png');
+    background-size: cover;
+
+.main_header_block {padding-top: 80px;
+    .black_square {
+        background: $black;
+        width: 50%;
+        padding: 19px 0;       
+        h1{
+            font-family: NovaBold; 
+            color: $white;
+            font-size: 44px;
+            line-height: 44px;
+            margin: 0;
+            text-align: right;
+            padding-right: 15%;
+        }
+    }
+    .header_title {
+        position: relative;
+        display: flex;
+        align-items: center;
+
+        .header_text {
+            width: 50%;
+            
+            p {
+                font-size: 16px;
+                line-height: 27px;
+                font-family: Semibold; 
+                color: $black;
+                margin-bottom: 41px;
+            }
+            .progress_bar {
+                display: flex;
+                align-items: center;
+                width: 468px;
+                height: 15px;
+                background: #F3F3F3;
+                border: 1px solid #F3F3F3;
+                box-sizing: border-box;
+                border-radius: 3px;
+                .progress {
+                    width: 259px;
+                    height: 9px;
+                    background: #296DCE;
+                    border-radius: 2px;
+                }
+            }
+            .processing_number {
+                font-family: Semibold;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                max-width: 340px;
+                color: $white;
+                margin-top: 7px;
+                .total {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    .number {
+                        font-size: 40px;
+                        margin-right: 10px;
+                    }
+                }
+                .done {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    .number {
+                        font-size: 40px;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+        
+    }
+}
+}
+.block_main_theme {
+    background: $background_gray; 
+}
+.main_theme {
+    list-style: none;
+    padding: 20px 0 20px 0;
+    margin: 0;
+    li{
+        display: inline-block;
+        a{
+            color: $gray2;
+            text-decoration: none;
+            font-size: 16px;
+            line-height: 19px;           
+            font-family: Semibold; 
+            position: relative;
+            padding: 0 35px 0 0;
+            margin: 0 10px 0 0;
+            
+            &::after{
+                content: '';
+                position: absolute;
+                top: 9px;
+                right: 0;            
+                width: 22px;
+                height: 1px;
+                background: $gray2;
+            }  
+        } 
+    }
+    .bold_link {
+        font-size: 16px;
+        line-height: 19px;        
+        font-family: Semibold;
+        text-decoration: none;
+        color: $black
+    }       
+}
+.module_tasks{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    color:$black;   
+    
+    h2{
+        font-size: 18px;
+        line-height: 22px;
+        color:$black;        
+        font-family: NovaBold;
+        position: relative;
+        padding-left: 30px;
+        overflow: hidden;
+        width: 100%;
+        &::before, &::after {   
+            content: '';
+            position: absolute;
+            display: inline-block;            
+            border-width: 0 10px;
+            vertical-align: middle;
+            height: 0px;
+            box-sizing: border-box;
+            
+            border-width: 0 100%;
+            top: 0;            
+            bottom: 0;
+            margin: auto;
+        }
+        &::before{
+            width: 22px; 
+            left: 0;
+            border: 1px solid $black;
+        }
+        &::after{          
+           width: 100%;
+           margin-left: 10px;
+           border: 1px solid $line_gray; 
+        }
+    }
+}
+.module_tasks_items {
+    padding-bottom: 65px;
+}
+.block_content {
+    ol{
+        counter-reset: myCounter;
+        padding: 0;
+
+        li{               
+            border-bottom: 1.3px solid $border_gray;
+            list-style: none;
+            position: relative;
+            &::before{
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                margin: auto 24px;
+                counter-increment: myCounter;
+                content:counter(myCounter);
+                font-family: NovaBold;
+                color: $black;
+                background:$border_gray;
+                display: inline-block;
+                text-align: center;                    
+                font-size: 16px;
+                line-height: 30px;
+                width: 30px;
+                height: 30px;
+                border-radius: 3px;                    
+            }
+    
+            .tasks_paragraf {
+                display: flex;
+                flex-direction:row;
+                justify-content: space-between;
+                align-items: center;
+                font-size: 16px;
+                line-height: 19px;
+                font-family: NovaBold;
+                color: $black;
+                position: relative;
+                cursor: pointer;
+                
+                
+                input[type="checkbox"]:checked, 
+                input[type="checkbox"]:not(:checked){
+                    position: absolute;
+                    left: -9999px;
+                    
+                }
+                                                    
+                
+                label{
+                    padding: 23px 55px 27px 80px;
+                    cursor: pointer; 
+                    &::before{
+                        content: "";
+                        position: absolute;
+                        margin: auto;
+                        right:0;
+                        top: 0;
+                        bottom: 0;
+                        display: block;                                    
+                        width: 25px;
+                        height: 25px;                        
+                        background: $footer_blue;
+                        border-radius: 3px;  
+                    }
+                    &::after{
+                        content: "";
+                        position: absolute;
+                        -webkit-transition: all 0.2s ease;
+                        -moz-transition: all 0.2s ease;
+                        -o-transition: all 0.2s ease;
+                        transition: all 0.2s ease;
+
+                        right: 5px;
+                        top: -3px;
+                        bottom: 0;
+                        margin: auto;
+                        width: 10px;
+                        height: 5px;
+                        border-radius: 1px;
+                        border-left: 4px solid $white;
+                        border-bottom: 4px solid $white;
+                        -webkit-transform: rotate(-45deg);
+                        -moz-transform: rotate(-45deg);
+                        -o-transform: rotate(-45deg);
+                        -ms-transform: rotate(-45deg);
+                        transform: rotate(-45deg);
+                    }                                             
+                }
+
+                input[type="checkbox"]:not(:checked) + label:after { 
+                        opacity: 0;
+                        
+                }
+                input[type="checkbox"]:not(:checked) + label:before { 
+                    background: #FAFAFA;
+                    border: 1px solid #DADADA;
+                    box-sizing: border-box;
+                    
+                }
+                input[type="checkbox"]:checked + label:after{
+                        opacity: 1; 
+                    
+                                    
+                }
+            
+                &:last-child{
+                    border-bottom: 1.3px solid transparent; 
+                } 
+        
+        }
+    }
+}
+}   
