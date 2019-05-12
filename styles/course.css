@@ -149,6 +149,11 @@ header .header_menu .header_topline_white nav a svg {
   margin: 29px 0 45px 0;
 }
 
+.header_content .header_title .header_text .head_button:hover {
+  color: #FC890D;
+  border: 1.5px solid #FC890D;
+}
+
 .header_content .header_title .header_text .progress_bar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -170,6 +175,7 @@ header .header_menu .header_topline_white nav a svg {
   height: 9px;
   background: #296DCE;
   border-radius: 2px;
+  margin-left: 5px;
 }
 
 .header_content .header_title .header_text .processing_number {
@@ -279,6 +285,10 @@ header .header_menu .header_topline_white nav a svg {
   margin: 0 10px 0 0;
 }
 
+.main_theme li a:hover {
+  color: #222B3A;
+}
+
 .main_theme li a::after {
   content: '';
   position: absolute;
@@ -361,8 +371,9 @@ header .header_menu .header_topline_white nav a svg {
   display: grid;
   -ms-grid-columns: 2fr 9fr 1fr;
       grid-template-columns: 2fr 9fr 1fr;
-  margin: 23px 23px 0 23px;
+  margin: 23px 0 23px 0;
   padding-top: 20px;
+  cursor: pointer;
 }
 
 .block_content .number_block {
@@ -416,6 +427,60 @@ header .header_menu .header_topline_white nav a svg {
   color: #FC890D;
 }
 
+.block_content .status {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.block_content .status span {
+  font-family: NovaBold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #222B3A;
+  display: block;
+  padding-bottom: 55px;
+}
+
+.block_content .status .status_bar {
+  position: relative;
+  width: 121px;
+  height: 15px;
+  background: #FAFAFA;
+  border: 1px solid #E6E6E6;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  display: block;
+}
+
+.block_content .status .status_bar .some_bar {
+  display: block;
+  position: absolute;
+  background: -webkit-gradient(linear, left top, right top, from(#0099DD), to(#178EC2));
+  background: linear-gradient(90deg, #0099DD 0%, #178EC2 100%);
+  border-radius: 1px;
+  height: 9px;
+  width: 60%;
+  bottom: 2px;
+  left: 2px;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  padding-bottom: 0;
+}
+
 footer {
   background-color: #0099DD;
   border-bottom: 47px solid #222B3A;
@@ -465,6 +530,10 @@ footer .footer_content a {
   font-family: Semibold;
 }
 
+footer .footer_content a:hover {
+  color: #222B3A;
+}
+
 @media (max-width: 900px) {
   header .header_menu .header_topline_white nav {
     width: 66%;
@@ -486,7 +555,13 @@ footer .footer_content a {
     width: 100%;
   }
   .header_content .header_title .header_text .progress_bar {
-    width: 100%;
+    width: 80%;
+  }
+  .header_content .header_title .header_text .progress_bar .progress {
+    width: 60%;
+  }
+  .header_content .header_title .header_text .processing_number {
+    width: 80%;
   }
   .header_content .header_title .header_text h1 {
     font-size: 32px;
@@ -510,9 +585,11 @@ footer .footer_content a {
 
 @media (max-width: 600px) {
   .block_content {
+    margin: 23px 0px 0 0px;
     -ms-grid-columns: 12fr;
         grid-template-columns: 12fr;
     padding: 10px;
+        grid-template-areas: 'a b b' 'c c c';
   }
   .block_content .number_block {
     font-size: 40px;
@@ -520,11 +597,36 @@ footer .footer_content a {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: a;
+  }
+  .block_content .block_items {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: c;
+    font-size: 14px;
+    line-height: 24px;
   }
   .block_content .block_items h4 {
     font-size: 19px;
     line-height: 23px;
     letter-spacing: 0.02em;
+  }
+  .block_content .status {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+  }
+  .block_content .status span {
+    padding-bottom: 0px;
+    padding-left: 10px;
+  }
+  .block_content .status .status_bar {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
 }
 
